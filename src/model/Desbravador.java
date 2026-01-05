@@ -9,9 +9,7 @@ public class Desbravador {
     private String cpf;
     private String rg;
 
-    // CORREÇÃO ESSENCIAL: O construtor estava atribuindo os campos a eles mesmos (ex: this.sexo = sexo),
-    // o que significa que eles não recebiam os valores dos parâmetros de entrada.
-    // Os parâmetros genéricos foram renomeados para clareza e mapeados para seus respectivos atributos.
+    
     public Desbravador(String nome, String sobrenome, int idade, String sexoInput, String cpfInput, String rgInput) {
         this.nome = nome;
         this.sobrenome = sobrenome;
