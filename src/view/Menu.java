@@ -8,12 +8,12 @@ package view;
  *
  * @author SOARES
  */
-public class ListaDesbravadores extends javax.swing.JPanel {
+public class Menu extends javax.swing.JPanel {
 
     /**
      * Creates new form ListaDesbravadores
      */
-    public ListaDesbravadores() {
+    public Menu() {
         initComponents();
     }
 
@@ -75,14 +75,19 @@ public class ListaDesbravadores extends javax.swing.JPanel {
             }
         });
 
-        button6.setBackground(new java.awt.Color(255, 102, 0));
+        button6.setBackground(new java.awt.Color(204, 204, 204));
         button6.setLabel("Especialidades");
 
-        button7.setBackground(new java.awt.Color(255, 102, 0));
+        button7.setBackground(new java.awt.Color(204, 204, 204));
         button7.setLabel("Ficha de Classes ");
 
         button8.setBackground(new java.awt.Color(255, 102, 0));
-        button8.setLabel("Proximo Evento: Campori 10/11/25");
+        button8.setLabel("Visualizar Desbravadores ");
+        button8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button8ActionPerformed(evt);
+            }
+        });
 
         label1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         label1.setText("Menu de Gestão.");
@@ -180,6 +185,10 @@ public class ListaDesbravadores extends javax.swing.JPanel {
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button5ActionPerformed
+
+    private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button8ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

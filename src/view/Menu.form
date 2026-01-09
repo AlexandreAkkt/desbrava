@@ -173,7 +173,7 @@
         <Component class="java.awt.Button" name="button6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="66" red="ff" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="label" type="java.lang.String" value="Especialidades"/>
           </Properties>
@@ -181,7 +181,7 @@
         <Component class="java.awt.Button" name="button7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="66" red="ff" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="label" type="java.lang.String" value="Ficha de Classes "/>
           </Properties>
@@ -191,8 +191,11 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="66" red="ff" type="rgb"/>
             </Property>
-            <Property name="label" type="java.lang.String" value="Proximo Evento: Campori 10/11/25"/>
+            <Property name="label" type="java.lang.String" value="Visualizar Desbravadores "/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="java.awt.Label" name="label1">
           <Properties>
