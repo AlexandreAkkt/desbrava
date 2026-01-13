@@ -395,7 +395,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\SOARES\Desktop\img soldados  (4) (1).png"/>
+              <Image iconType="3" name="/static/img soldados  (.png"/>
             </Property>
           </Properties>
         </Component>
