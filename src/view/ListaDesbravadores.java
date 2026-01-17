@@ -27,11 +27,24 @@ public class ListaDesbravadores extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        label1 = new java.awt.Label();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jFormattedTextField2 = new javax.swing.JFormattedTextField();
+        label2 = new java.awt.Label();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jFormattedTextField3 = new javax.swing.JFormattedTextField();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -44,9 +57,37 @@ public class ListaDesbravadores extends javax.swing.JFrame {
             .addGap(0, 330, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Lista Desbravadores ");
-        getContentPane().setLayout(null);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/Lenço (1).png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+
+        label1.setText("label1");
+
+        jLabel4.setText("jLabel4");
+        jLabel4.setMaximumSize(new java.awt.Dimension(297, 384));
+        jLabel4.setMinimumSize(new java.awt.Dimension(297, 384));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img Lista.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+
+        jFormattedTextField2.setText("Nome:");
+        jFormattedTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField2ActionPerformed(evt);
+            }
+        });
+
+        label2.setText("No");
+        label2.getAccessibleContext().setAccessibleName("Nome Desbravador "); // NOI18N
+
+        jList1.setBackground(new java.awt.Color(255, 153, 0));
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        jFormattedTextField3.setText("Matheus Silva ");
 
         jFormattedTextField1.setText("João Pedro Moto ");
         jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -54,25 +95,35 @@ public class ListaDesbravadores extends javax.swing.JFrame {
                 jFormattedTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jFormattedTextField1);
-        jFormattedTextField1.setBounds(0, 40, 165, 22);
 
-        jFormattedTextField2.setText("jFormattedTextField2");
-        getContentPane().add(jFormattedTextField2);
-        jFormattedTextField2.setBounds(0, 80, 165, 22);
+        jLabel2.setText("CPF");
 
-        jLabel1.setText("CPF 12345678900");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(170, 40, 100, 20);
+        jLabel1.setText("123456789-00");
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(170, 80, 76, 16);
+        jLabel5.setText("0000000-00");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/Lenço (1).png"))); // NOI18N
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 30, 240, 440);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Lista Desbravadores ");
+        getContentPane().setLayout(null);
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setLayout(null);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/LençoD.png"))); // NOI18N
+        jPanel2.add(jLabel7);
+        jLabel7.setBounds(90, 0, 64, 96);
+
+        jList2.setBackground(new java.awt.Color(255, 153, 0));
+        jList2.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jScrollPane2.setViewportView(jList2);
+
+        jPanel2.add(jScrollPane2);
+        jScrollPane2.setBounds(10, 90, 230, 350);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 260, 460);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -80,6 +131,10 @@ public class ListaDesbravadores extends javax.swing.JFrame {
     private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+
+    private void jFormattedTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,11 +172,24 @@ public class ListaDesbravadores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
+    private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private java.awt.Label label1;
+    private java.awt.Label label2;
     // End of variables declaration//GEN-END:variables
 }
