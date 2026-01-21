@@ -64,6 +64,11 @@ public class Menu extends javax.swing.JPanel {
 
         button1.setBackground(new java.awt.Color(255, 102, 0));
         button1.setLabel("Editar Desbravador ");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
 
         button5.setActionCommand("Cadastro de Desbravador ");
         button5.setBackground(new java.awt.Color(255, 102, 0));
@@ -98,8 +103,6 @@ public class Menu extends javax.swing.JPanel {
         jTextField1.setBackground(new java.awt.Color(255, 204, 51));
         jTextField1.setText("Sair da conta");
         jTextField1.setToolTipText("");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SOARES\\Desktop\\img soldados  (4) (1).png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -184,11 +187,42 @@ public class Menu extends javax.swing.JPanel {
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
         // TODO add your handling code here:
+        // 1. Pega a janela que contém este painel
+    javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+    
+    // 2. Cria o novo painel que você quer mostrar (ex: Menu)
+    view.Menu novoPainel = new view.Menu();
+    
+    // 3. Substitui o conteúdo da janela
+    janela.getContentPane().removeAll(); // Remove o painel atual (Start)
+    janela.getContentPane().add(new CadastroDesbravador()); // Adiciona o novo (Menu)
+    
+    // 4. Atualiza a interface
+    janela.revalidate();
+    janela.repaint();
     }//GEN-LAST:event_button5ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
         // TODO add your handling code here:
+      
     }//GEN-LAST:event_button8ActionPerformed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+              // 1. Pega a janela que contém este painel
+    javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+    
+    // 2. Cria o novo painel que você quer mostrar (ex: Menu)
+    view.Menu novoPainel = new view.Menu();
+    
+    // 3. Substitui o conteúdo da janela
+    janela.getContentPane().removeAll(); // Remove o painel atual (Start)
+    janela.getContentPane().add(new CadastroDesbravador()); // Adiciona o novo (Menu)
+    
+    // 4. Atualiza a interface
+    janela.revalidate();
+    janela.repaint();
+    }//GEN-LAST:event_button1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
