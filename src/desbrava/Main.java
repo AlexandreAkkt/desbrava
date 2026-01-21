@@ -49,6 +49,10 @@ public class Main {
 
         // Logout
         admin.adminLogout();
+        
+        //  AQUI entra a tela gráfica
+        System.out.println("\nAbrindo tela gráfica...");
+        new view.CadastroDesbravador().setVisible(true);
     }
 }
 

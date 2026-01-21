@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author SOARES
@@ -115,6 +117,11 @@ public class CadastroDesbravador extends javax.swing.JPanel {
         });
 
         jToggleButton1.setText("Proximo");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -233,6 +240,15 @@ public class CadastroDesbravador extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_textField8ActionPerformed
 
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    JOptionPane.showMessageDialog(this, "Clique detectado!");
+
+    CadastroSucesso tela = new CadastroSucesso();
+    tela.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
@@ -254,4 +270,8 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     private java.awt.TextField textField7;
     private java.awt.TextField textField8;
     // End of variables declaration//GEN-END:variables
+
+    private void dispose() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

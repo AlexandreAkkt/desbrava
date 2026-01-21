@@ -14,8 +14,17 @@ public class CadastroSucesso extends javax.swing.JPanel {
      * Creates new form DesbravadorEnd
      */
     public CadastroSucesso() {
-        initComponents();
+    initComponents();
+
+    java.net.URL imgURL = getClass().getResource("/static/CadastroComSucesso.png");
+
+    if (imgURL != null) {
+        jLabel3.setIcon(new javax.swing.ImageIcon(imgURL));
+    } else {
+        System.out.println("Imagem não encontrada: /static/CadastroComSucesso.png");
     }
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
