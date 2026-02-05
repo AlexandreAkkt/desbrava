@@ -5,6 +5,9 @@
 package view;
 
 import javax.swing.JOptionPane;
+import javax.swing.JFrame;
+import view.CadastroSucesso;
+
 
 /**
  *
@@ -12,12 +15,21 @@ import javax.swing.JOptionPane;
  */
 public class CadastroDesbravador extends javax.swing.JPanel {
 
+    
+
     /**
      * Creates new form CadastroDesbravador
+     * @param janela
      */
-    public CadastroDesbravador() {
-        initComponents();
-    }
+    public CadastroDesbravador(JFrame janela) {
+    initComponents();
+}
+
+// mantém esse se o NetBeans usar internamente
+public CadastroDesbravador() {
+    initComponents();
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -262,7 +274,15 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
+   {                                               
+    JOptionPane.showMessageDialog(this, "Clique detectado!");
+
+    CadastroSucesso tela = new CadastroSucesso();
+    tela.setVisible(true);
+
+    this.dispose();
+    }                                              
+
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
 
