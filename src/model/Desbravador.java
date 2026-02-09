@@ -27,6 +27,10 @@ public class Desbravador {
         this.rg = rgInput;
     }
 
+    public Desbravador() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public String getNome() {
         return nome;
     }

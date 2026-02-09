@@ -6,6 +6,7 @@ package view;
 
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
+import model.Desbravador;
 import view.CadastroSucesso;
 
 
@@ -24,6 +25,7 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     public CadastroDesbravador(JFrame janela) {
     initComponents();
 }
+    Desbravador desbravador = new Desbravador();
 
 // mantém esse se o NetBeans usar internamente
 public CadastroDesbravador() {
