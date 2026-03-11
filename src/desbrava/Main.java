@@ -1,5 +1,4 @@
 package desbrava;
-
 import view.Menu;
 import javax.swing.JFrame;
 
@@ -16,7 +15,6 @@ public class Main {
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Fecha o programa ao clicar no X
         janela.setSize(400, 600); // Defina um tamanho para a janela
         janela.setLocationRelativeTo(null); // Centraliza na tela
-
         janela.setVisible(true);
        
     }

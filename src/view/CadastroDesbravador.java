@@ -1,22 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package view;
-
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import model.Desbravador;
 import view.CadastroSucesso;
-
 
 /**
  *
  * @author SOARES
  */
 public class CadastroDesbravador extends javax.swing.JPanel {
-
-    
 
     /**
      * Creates new form CadastroDesbravador
@@ -25,13 +17,12 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     public CadastroDesbravador(JFrame janela) {
     initComponents();
 }
-    Desbravador desbravador = new Desbravador();
+    Desbravador desbravador = new Desbravador("","",0,"","","");
 
 // mantém esse se o NetBeans usar internamente
 public CadastroDesbravador() {
     initComponents();
 }
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,6 +59,11 @@ public CadastroDesbravador() {
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
 
+        textField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                textField1FocusLost(evt);
+            }
+        });
         textField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 textField1ActionPerformed(evt);
@@ -239,7 +235,8 @@ public CadastroDesbravador() {
     }// </editor-fold>//GEN-END:initComponents
 
     private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:   
+        
     }//GEN-LAST:event_textField1ActionPerformed
 
     private void textField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField3ActionPerformed
@@ -286,6 +283,18 @@ public CadastroDesbravador() {
     }                                              
 
     }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void textField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textField1FocusLost
+
+        // 1. Captura o texto e limpa espaços extras
+        String nome = textField1.getText().trim();
+    
+        // 2. Verifica se não está vazio para evitar exibir nada
+        if (!nome.isEmpty()) {
+            desbravador.setNome(nome);
+            System.out.print(desbravador.getNome());
+        }
+    }//GEN-LAST:event_textField1FocusLost
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
