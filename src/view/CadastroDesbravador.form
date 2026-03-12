@@ -65,10 +65,10 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="label8" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                               <Component id="label4" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="textField1" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                              <Component id="nomeCompleto" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
                               <Component id="label2" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="label3" min="-2" max="-2" attributes="0"/>
-                              <Component id="textField3" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                              <Component id="email" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
                               <Component id="textField4" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
                               <Component id="label7" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                               <Component id="textField6" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
@@ -103,11 +103,11 @@
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                   <Component id="label3" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField1" min="-2" max="-2" attributes="0"/>
+                  <Component id="nomeCompleto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="label4" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="textField3" min="-2" max="-2" attributes="0"/>
+                  <Component id="email" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="label8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -139,10 +139,10 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="java.awt.TextField" name="textField1">
+        <Component class="java.awt.TextField" name="nomeCompleto">
           <Events>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="textField1FocusLost"/>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="nomeCompletoFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeCompletoActionPerformed"/>
           </Events>
         </Component>
         <Component class="java.awt.Label" name="label2">
@@ -164,9 +164,10 @@
             <Property name="text" type="java.lang.String" value="Nome Completo"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="textField3">
+        <Component class="java.awt.TextField" name="email">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField3ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="emailFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailActionPerformed"/>
           </Events>
         </Component>
         <Component class="java.awt.TextField" name="textField4">

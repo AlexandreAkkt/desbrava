@@ -1,6 +1,4 @@
 package model;
-
-
 public class Desbravador {
     private String nome;
     private String sobrenome;
@@ -85,6 +83,5 @@ public class Desbravador {
         System.out.println("RG: " + rg);
         System.out.println("----------------------------");
     }
-
 
 }

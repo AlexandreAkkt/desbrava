@@ -36,10 +36,10 @@ public CadastroDesbravador() {
         label1 = new java.awt.Label();
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        textField1 = new java.awt.TextField();
+        nomeCompleto = new java.awt.TextField();
         label2 = new java.awt.Label();
         label3 = new java.awt.Label();
-        textField3 = new java.awt.TextField();
+        email = new java.awt.TextField();
         textField4 = new java.awt.TextField();
         textField5 = new java.awt.TextField();
         label4 = new java.awt.Label();
@@ -59,14 +59,14 @@ public CadastroDesbravador() {
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 0));
 
-        textField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        nomeCompleto.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                textField1FocusLost(evt);
+                nomeCompletoFocusLost(evt);
             }
         });
-        textField1.addActionListener(new java.awt.event.ActionListener() {
+        nomeCompleto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField1ActionPerformed(evt);
+                nomeCompletoActionPerformed(evt);
             }
         });
 
@@ -76,9 +76,14 @@ public CadastroDesbravador() {
         label3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         label3.setText("Nome Completo");
 
-        textField3.addActionListener(new java.awt.event.ActionListener() {
+        email.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                emailFocusLost(evt);
+            }
+        });
+        email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField3ActionPerformed(evt);
+                emailActionPerformed(evt);
             }
         });
 
@@ -152,10 +157,10 @@ public CadastroDesbravador() {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(textField6, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -181,11 +186,11 @@ public CadastroDesbravador() {
                 .addGap(38, 38, 38)
                 .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(textField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -234,14 +239,14 @@ public CadastroDesbravador() {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
+    private void nomeCompletoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeCompletoActionPerformed
         // TODO add your handling code here:   
         
-    }//GEN-LAST:event_textField1ActionPerformed
+    }//GEN-LAST:event_nomeCompletoActionPerformed
 
-    private void textField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField3ActionPerformed
+    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField3ActionPerformed
+    }//GEN-LAST:event_emailActionPerformed
 
     private void textField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField4ActionPerformed
         // TODO add your handling code here:
@@ -284,21 +289,27 @@ public CadastroDesbravador() {
 
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
-    private void textField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textField1FocusLost
+    private void nomeCompletoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeCompletoFocusLost
 
         // 1. Captura o texto e limpa espaços extras
-        String nome = textField1.getText().trim();
+        String nome = nomeCompleto.getText().trim();
     
         // 2. Verifica se não está vazio para evitar exibir nada
         if (!nome.isEmpty()) {
             desbravador.setNome(nome);
             System.out.print(desbravador.getNome());
         }
-    }//GEN-LAST:event_textField1FocusLost
+    }//GEN-LAST:event_nomeCompletoFocusLost
+
+    private void emailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailFocusLost
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_emailFocusLost
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private java.awt.TextField email;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
@@ -310,8 +321,7 @@ public CadastroDesbravador() {
     private java.awt.Label label6;
     private java.awt.Label label7;
     private java.awt.Label label8;
-    private java.awt.TextField textField1;
-    private java.awt.TextField textField3;
+    private java.awt.TextField nomeCompleto;
     private java.awt.TextField textField4;
     private java.awt.TextField textField5;
     private java.awt.TextField textField6;
