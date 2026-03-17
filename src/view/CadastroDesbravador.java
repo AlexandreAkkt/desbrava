@@ -397,7 +397,8 @@ public CadastroDesbravador() {
     if (!nomeMaeTexto.isEmpty()) {
         desbravador.setNomeMae(nomeMaeTexto);
         System.out.println(desbravador.getNomeMae());
-        }
+        
+    }
     }//GEN-LAST:event_NomeMaeFocusLost
 
 
