@@ -63,15 +63,15 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="label8" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="label4" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="DataNasc" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="Email" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                               <Component id="nomeCompleto" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="label2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="label3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DesCpf" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="NomeCompleto" min="-2" max="-2" attributes="0"/>
                               <Component id="email" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="textField4" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="label7" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="textField6" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                              <Component id="dataNasc" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                              <Component id="DescRg" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="Rg" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="33" max="32767" attributes="0"/>
                       </Group>
@@ -79,16 +79,16 @@
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                  <Component id="jToggleButton2" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="voltar" min="-2" pref="73" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Proximo" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="textField5" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                                  <Component id="label6" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <Component id="textField7" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                                  <Component id="label5" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <Component id="textField8" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                                  <Component id="Cpf" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                                  <Component id="PiaNome" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="NomePai" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
+                                  <Component id="MaeNome" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="NomeMae" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -101,37 +101,37 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  <Component id="label3" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="NomeCompleto" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="nomeCompleto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label4" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="Email" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                   <Component id="email" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label8" min="-2" max="-2" attributes="0"/>
+                  <Component id="DataNasc" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField4" min="-2" max="-2" attributes="0"/>
+                  <Component id="dataNasc" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label2" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="DesCpf" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="textField5" min="-2" max="-2" attributes="0"/>
+                  <Component id="Cpf" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label7" min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="DescRg" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField6" min="-2" max="-2" attributes="0"/>
+                  <Component id="Rg" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label6" min="-2" max="-2" attributes="0"/>
+                  <Component id="PiaNome" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField7" min="-2" max="-2" attributes="0"/>
+                  <Component id="NomePai" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="label5" min="-2" max="-2" attributes="0"/>
+                  <Component id="MaeNome" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField8" min="-2" max="-2" attributes="0"/>
+                  <Component id="NomeMae" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jToggleButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jToggleButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Proximo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="voltar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
               </Group>
@@ -145,7 +145,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nomeCompletoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.Label" name="label2">
+        <Component class="java.awt.Label" name="DesCpf">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -156,7 +156,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
           </AccessibilityProperties>
         </Component>
-        <Component class="java.awt.Label" name="label3">
+        <Component class="java.awt.Label" name="NomeCompleto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -170,17 +170,19 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.TextField" name="textField4">
+        <Component class="java.awt.TextField" name="dataNasc">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField4ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="dataNascFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dataNascActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.TextField" name="textField5">
+        <Component class="java.awt.TextField" name="Cpf">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField5ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="CpfFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CpfActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.Label" name="label4">
+        <Component class="java.awt.Label" name="Email">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -188,7 +190,7 @@
             <Property name="text" type="java.lang.String" value="E -mail"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Label" name="label5">
+        <Component class="java.awt.Label" name="MaeNome">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -199,7 +201,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Nome M&#xe3;e"/>
           </AccessibilityProperties>
         </Component>
-        <Component class="java.awt.Label" name="label6">
+        <Component class="java.awt.Label" name="PiaNome">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -207,7 +209,7 @@
             <Property name="text" type="java.lang.String" value="Nome Pai"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Label" name="label7">
+        <Component class="java.awt.Label" name="DescRg">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -215,7 +217,7 @@
             <Property name="text" type="java.lang.String" value="RG"/>
           </Properties>
         </Component>
-        <Component class="java.awt.Label" name="label8">
+        <Component class="java.awt.Label" name="DataNasc">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -223,35 +225,38 @@
             <Property name="text" type="java.lang.String" value="Data Nasc"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="textField6">
+        <Component class="java.awt.TextField" name="Rg">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField6ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="RgFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RgActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.TextField" name="textField7">
+        <Component class="java.awt.TextField" name="NomePai">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField7ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="NomePaiFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NomePaiActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.TextField" name="textField8">
+        <Component class="java.awt.TextField" name="NomeMae">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField8ActionPerformed"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="NomeMaeFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NomeMaeActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="jToggleButton1">
+        <Component class="javax.swing.JToggleButton" name="Proximo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Proximo"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProximoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="jToggleButton2">
+        <Component class="javax.swing.JToggleButton" name="voltar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Voltar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="voltarActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

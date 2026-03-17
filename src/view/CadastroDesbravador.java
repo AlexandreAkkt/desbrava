@@ -37,21 +37,21 @@ public CadastroDesbravador() {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         nomeCompleto = new java.awt.TextField();
-        label2 = new java.awt.Label();
-        label3 = new java.awt.Label();
+        DesCpf = new java.awt.Label();
+        NomeCompleto = new java.awt.Label();
         email = new java.awt.TextField();
-        textField4 = new java.awt.TextField();
-        textField5 = new java.awt.TextField();
-        label4 = new java.awt.Label();
-        label5 = new java.awt.Label();
-        label6 = new java.awt.Label();
-        label7 = new java.awt.Label();
-        label8 = new java.awt.Label();
-        textField6 = new java.awt.TextField();
-        textField7 = new java.awt.TextField();
-        textField8 = new java.awt.TextField();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
+        dataNasc = new java.awt.TextField();
+        Cpf = new java.awt.TextField();
+        Email = new java.awt.Label();
+        MaeNome = new java.awt.Label();
+        PiaNome = new java.awt.Label();
+        DescRg = new java.awt.Label();
+        DataNasc = new java.awt.Label();
+        Rg = new java.awt.TextField();
+        NomePai = new java.awt.TextField();
+        NomeMae = new java.awt.TextField();
+        Proximo = new javax.swing.JToggleButton();
+        voltar = new javax.swing.JToggleButton();
 
         label1.setText("label1");
 
@@ -70,11 +70,11 @@ public CadastroDesbravador() {
             }
         });
 
-        label2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label2.setText("CPF");
+        DesCpf.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        DesCpf.setText("CPF");
 
-        label3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label3.setText("Nome Completo");
+        NomeCompleto.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        NomeCompleto.setText("Nome Completo");
 
         email.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -87,62 +87,87 @@ public CadastroDesbravador() {
             }
         });
 
-        textField4.addActionListener(new java.awt.event.ActionListener() {
+        dataNasc.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                dataNascFocusLost(evt);
+            }
+        });
+        dataNasc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField4ActionPerformed(evt);
+                dataNascActionPerformed(evt);
             }
         });
 
-        textField5.addActionListener(new java.awt.event.ActionListener() {
+        Cpf.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                CpfFocusLost(evt);
+            }
+        });
+        Cpf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField5ActionPerformed(evt);
+                CpfActionPerformed(evt);
             }
         });
 
-        label4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label4.setText("E -mail");
+        Email.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        Email.setText("E -mail");
 
-        label5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label5.setText("Nome Mãe ");
+        MaeNome.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        MaeNome.setText("Nome Mãe ");
 
-        label6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label6.setText("Nome Pai");
+        PiaNome.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        PiaNome.setText("Nome Pai");
 
-        label7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label7.setText("RG");
+        DescRg.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        DescRg.setText("RG");
 
-        label8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        label8.setText("Data Nasc");
+        DataNasc.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        DataNasc.setText("Data Nasc");
 
-        textField6.addActionListener(new java.awt.event.ActionListener() {
+        Rg.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                RgFocusLost(evt);
+            }
+        });
+        Rg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField6ActionPerformed(evt);
+                RgActionPerformed(evt);
             }
         });
 
-        textField7.addActionListener(new java.awt.event.ActionListener() {
+        NomePai.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                NomePaiFocusLost(evt);
+            }
+        });
+        NomePai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField7ActionPerformed(evt);
+                NomePaiActionPerformed(evt);
             }
         });
 
-        textField8.addActionListener(new java.awt.event.ActionListener() {
+        NomeMae.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                NomeMaeFocusLost(evt);
+            }
+        });
+        NomeMae.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField8ActionPerformed(evt);
+                NomeMaeActionPerformed(evt);
             }
         });
 
-        jToggleButton1.setText("Proximo");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        Proximo.setText("Proximo");
+        Proximo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                ProximoActionPerformed(evt);
             }
         });
 
-        jToggleButton2.setText("Voltar");
-        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+        voltar.setText("Voltar");
+        voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton2ActionPerformed(evt);
+                voltarActionPerformed(evt);
             }
         });
 
@@ -155,71 +180,71 @@ public CadastroDesbravador() {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DesCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(textField6, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(dataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DescRg, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Rg, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(33, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
-                                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jToggleButton1))
+                                .addComponent(Proximo))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(textField5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(label6, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(textField7, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(textField8, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(PiaNome, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(NomePai, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(MaeNome, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(NomeMae, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DesCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
-                .addComponent(textField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DescRg, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Rg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PiaNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NomePai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(MaeNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NomeMae, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton1)
-                    .addComponent(jToggleButton2))
+                    .addComponent(Proximo)
+                    .addComponent(voltar))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        label2.getAccessibleContext().setAccessibleName("");
-        label5.getAccessibleContext().setAccessibleName("Nome Mãe");
+        DesCpf.getAccessibleContext().setAccessibleName("");
+        MaeNome.getAccessibleContext().setAccessibleName("Nome Mãe");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -248,36 +273,36 @@ public CadastroDesbravador() {
         // TODO add your handling code here:
     }//GEN-LAST:event_emailActionPerformed
 
-    private void textField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField4ActionPerformed
+    private void dataNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataNascActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField4ActionPerformed
+    }//GEN-LAST:event_dataNascActionPerformed
 
-    private void textField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField5ActionPerformed
+    private void CpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CpfActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField5ActionPerformed
+    }//GEN-LAST:event_CpfActionPerformed
 
-    private void textField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField6ActionPerformed
+    private void RgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RgActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField6ActionPerformed
+    }//GEN-LAST:event_RgActionPerformed
 
-    private void textField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField7ActionPerformed
+    private void NomePaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomePaiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField7ActionPerformed
+    }//GEN-LAST:event_NomePaiActionPerformed
 
-    private void textField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField8ActionPerformed
+    private void NomeMaeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomeMaeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField8ActionPerformed
+    }//GEN-LAST:event_NomeMaeActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
     JOptionPane.showMessageDialog(this, "Clique detectado!");
 
     CadastroSucesso tela = new CadastroSucesso();
     tela.setVisible(true);
 
     this.dispose();
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_ProximoActionPerformed
 
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+    private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
    {                                               
     JOptionPane.showMessageDialog(this, "Clique detectado!");
 
@@ -287,14 +312,14 @@ public CadastroDesbravador() {
     this.dispose();
     }                                              
 
-    }//GEN-LAST:event_jToggleButton2ActionPerformed
+    }//GEN-LAST:event_voltarActionPerformed
 
     private void nomeCompletoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeCompletoFocusLost
 
         // 1. Captura o texto e limpa espaços extras
         String nome = nomeCompleto.getText().trim();
     
-        // 2. Verifica se não está vazio para evitar exibir nada
+        
         if (!nome.isEmpty()) {
             desbravador.setNome(nome);
             System.out.print(desbravador.getNome());
@@ -302,31 +327,100 @@ public CadastroDesbravador() {
     }//GEN-LAST:event_nomeCompletoFocusLost
 
     private void emailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailFocusLost
-        // TODO add your handling code here:
+        // TODO add your handling code here:,
+        
+        String emailTexto = email.getText().trim();
+        
+        if (!emailTexto.isEmpty()) {
+            desbravador.setEmail(emailTexto);
+            System.out.print(desbravador.getEmail());
+        }
+        
         
     }//GEN-LAST:event_emailFocusLost
 
+    private void dataNascFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_dataNascFocusLost
+        // TODO add your handling code here:
+        
+        String dataNascTexto = dataNasc.getText().trim();
+
+    
+        if (!dataNascTexto.isEmpty()) {
+        desbravador.setDataNascimento(dataNascTexto);
+        System.out.print(desbravador.getDataNascimento());
+        
+        }
+      
+    }//GEN-LAST:event_dataNascFocusLost
+
+    private void CpfFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CpfFocusLost
+        // TODO add your handling code here:
+     
+    String cpfTexto = Cpf.getText().trim();
+
+    
+    if (!cpfTexto.isEmpty()) {
+        desbravador.setCpf(cpfTexto);
+        System.out.print(desbravador.getCpf());
+        }
+    
+    }//GEN-LAST:event_CpfFocusLost
+
+    private void RgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_RgFocusLost
+        // TODO add your handling code here:
+        String rgTexto = Rg.getText().trim();
+
+    
+    if (!rgTexto.isEmpty()) {
+        desbravador.setRg(rgTexto);
+        System.out.print(desbravador.getRg());
+        }
+    }//GEN-LAST:event_RgFocusLost
+
+    private void NomePaiFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NomePaiFocusLost
+        // TODO add your handling code here:
+          String nomePaiTexto = NomePai.getText().trim();
+
+   
+    if (!nomePaiTexto.isEmpty()) {
+        desbravador.setNomePai(nomePaiTexto);
+        System.out.println(desbravador.getNomePai());
+    }
+        
+        
+    }//GEN-LAST:event_NomePaiFocusLost
+
+    private void NomeMaeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NomeMaeFocusLost
+        // TODO add your handling code here:
+         String nomeMaeTexto = NomeMae.getText().trim();
+
+    if (!nomeMaeTexto.isEmpty()) {
+        desbravador.setNomeMae(nomeMaeTexto);
+        System.out.println(desbravador.getNomeMae());
+        }
+    }//GEN-LAST:event_NomeMaeFocusLost
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.TextField Cpf;
+    private java.awt.Label DataNasc;
+    private java.awt.Label DesCpf;
+    private java.awt.Label DescRg;
+    private java.awt.Label Email;
+    private java.awt.Label MaeNome;
+    private java.awt.Label NomeCompleto;
+    private java.awt.TextField NomeMae;
+    private java.awt.TextField NomePai;
+    private java.awt.Label PiaNome;
+    private javax.swing.JToggleButton Proximo;
+    private java.awt.TextField Rg;
     private javax.swing.ButtonGroup buttonGroup1;
+    private java.awt.TextField dataNasc;
     private java.awt.TextField email;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
     private java.awt.Label label1;
-    private java.awt.Label label2;
-    private java.awt.Label label3;
-    private java.awt.Label label4;
-    private java.awt.Label label5;
-    private java.awt.Label label6;
-    private java.awt.Label label7;
-    private java.awt.Label label8;
     private java.awt.TextField nomeCompleto;
-    private java.awt.TextField textField4;
-    private java.awt.TextField textField5;
-    private java.awt.TextField textField6;
-    private java.awt.TextField textField7;
-    private java.awt.TextField textField8;
+    private javax.swing.JToggleButton voltar;
     // End of variables declaration//GEN-END:variables
 
     private void dispose() {
