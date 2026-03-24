@@ -294,11 +294,20 @@ public CadastroDesbravador() {
     }//GEN-LAST:event_NomeMaeActionPerformed
 
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
-    JOptionPane.showMessageDialog(this, "Clique detectado!");
+     String json = String.format(
+        "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
+        desbravador.getNome(),
+        desbravador.getEmail(),
+        desbravador.getDataNascimento(),
+        desbravador.getCpf(),
+        desbravador.getRg(),
+        desbravador.getNomePai(),
+        desbravador.getNomeMae()
+    );
 
-    CadastroSucesso tela = new CadastroSucesso();
-    tela.setVisible(true);
+    System.out.println(json);
 
+    new CadastroSucesso().setVisible(true);
     this.dispose();
     }//GEN-LAST:event_ProximoActionPerformed
 
