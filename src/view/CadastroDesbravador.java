@@ -295,7 +295,7 @@ public CadastroDesbravador() {
 
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
      String json = String.format(
-        "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
+       // "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
         desbravador.getNome(),
         desbravador.getEmail(),
         desbravador.getDataNascimento(),
@@ -313,10 +313,10 @@ public CadastroDesbravador() {
 
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
    {                                               
-    JOptionPane.showMessageDialog(this, "Clique detectado!");
+     JOptionPane.showMessageDialog(this, "Clique detectado!");
 
-    CadastroSucesso tela = new CadastroSucesso();
-    tela.setVisible(true);
+        CadastroSucesso tela = new CadastroSucesso();
+        tela.setVisible(true);
 
     this.dispose();
     }                                              
