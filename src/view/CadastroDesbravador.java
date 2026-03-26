@@ -2,7 +2,6 @@ package view;
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import model.Desbravador;
-import view.CadastroSucesso;
 
 /**
  *
@@ -17,7 +16,8 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     public CadastroDesbravador(JFrame janela) {
     initComponents();
 }
-    Desbravador desbravador = new Desbravador("","",0,"","","");
+    Desbravador desbravador = new Desbravador("");
+    
 
 // mantém esse se o NetBeans usar internamente
 public CadastroDesbravador() {
@@ -294,21 +294,9 @@ public CadastroDesbravador() {
     }//GEN-LAST:event_NomeMaeActionPerformed
 
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
-     String json = String.format(
-       "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
-        desbravador.getNome(),
-        desbravador.getEmail(),
-        desbravador.getDataNascimento(),
-        desbravador.getCpf(),
-        desbravador.getRg(),
-        desbravador.getNomePai(),
-        desbravador.getNomeMae()
-    );
+ 
+   
 
-    System.out.println(json);
-
-    new CadastroSucesso().setVisible(true);
-    this.dispose();
     }//GEN-LAST:event_ProximoActionPerformed
 
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
@@ -330,7 +318,7 @@ public CadastroDesbravador() {
     
         
         if (!nome.isEmpty()) {
-            desbravador.setNome(nome);
+            desbravador.
             System.out.print(desbravador.getNome());
         }
     }//GEN-LAST:event_nomeCompletoFocusLost
