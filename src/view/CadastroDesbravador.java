@@ -295,7 +295,7 @@ public CadastroDesbravador() {
 
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
      String json = String.format(
-       // "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
+       "{\"nome\":\"%s\",\"email\":\"%s\",\"dataNascimento\":\"%s\",\"cpf\":\"%s\",\"rg\":\"%s\",\"nomePai\":\"%s\",\"nomeMae\":\"%s\"}",
         desbravador.getNome(),
         desbravador.getEmail(),
         desbravador.getDataNascimento(),
@@ -338,10 +338,10 @@ public CadastroDesbravador() {
     private void emailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailFocusLost
         // TODO add your handling code here:,
         
-        String emailTexto = email.getText().trim();
+        String emailValue = email.getText().trim();
         
-        if (!emailTexto.isEmpty()) {
-            desbravador.setEmail(emailTexto);
+        if (!emailValue.isEmpty()) {
+            desbravador.setEmail(emailValue);
             System.out.print(desbravador.getEmail());
         }
         

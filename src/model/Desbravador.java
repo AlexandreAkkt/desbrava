@@ -1,66 +1,71 @@
 package model;
+
+    boolean getNomeCompleto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean getEmail() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    String getCpf() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    boolean getRg() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 public class Desbravador {
-    private String nome;
-    private String sobrenome;
-    private int idade;
-    private char sexo;
+
+    private String nomeCompleto;
+    private String email;
+    private String dataNascimento;
     private String cpf;
     private String rg;
+    private String nomePai;
+    private String nomeMae;
 
-    
-    public Desbravador(String nome, String sobrenome, int idade, String sexoInput, String cpfInput, String rgInput) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.idade = idade;
-        
-        // O campo 'sexo' é do tipo char, mas o parâmetro de entrada na Main é uma String (ex: "M"). 
-        // Pegamos o primeiro caractere da String de entrada.
-        if (sexoInput != null && !sexoInput.isEmpty()) {
-            this.sexo = sexoInput.charAt(0);
-        } else {
-            this.sexo = ' ';
-        }
+    // Construtor
+    public Desbravador(String nomeCompleto, String email, String dataNascimento, String cpf, String rg, String nomePai, String nomeMae) {
 
-        this.cpf = cpfInput;
-        this.rg = rgInput;
+        this.nomeCompleto = nomeCompleto;
+        this.email = email;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.nomePai = nomePai;
+        this.nomeMae = nomeMae;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCompleto() {
+        return nomeCompleto;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
     }
 
-    public String getSobrenome() {
-        return sobrenome;
+    public String getEmail() {
+        return email;
     }
 
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getIdade() {
-        return idade;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getCpf() {
         return cpf;
     }
- 
+
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
@@ -73,18 +78,37 @@ public class Desbravador {
         this.rg = rg;
     }
 
-    public void apresentar() {
-        System.out.println("--- Dados do Desbravador ---");
-        System.out.println("Nome: " + nome);
-        System.out.println("Sobrenome: " + sobrenome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Sexo: " + sexo);
-        System.out.println("CPF: " + cpf);
-        System.out.println("RG: " + rg);
-        System.out.println("----------------------------");
+    public String getNomePai() {
+        return nomePai;
     }
 
-    public boolean getEmail() {
+    public void setNomePai(String nomePai) {
+        this.nomePai = nomePai;
+    }
+
+    public String getNomeMae() {
+        return nomeMae;
+    }
+
+    public void setNomeMae(String nomeMae) {
+        this.nomeMae = nomeMae;
+    }
+
+    public void apresentar() {
+        System.out.println("--- Dados do Desbravador ---");
+        System.out.println("Nome: " + nomeCompleto);
+        System.out.println("Email: " + email);
+        System.out.println("Data Nascimento: " + dataNascimento);
+        System.out.println("CPF: " + cpf);
+        System.out.println("RG: " + rg);
+        System.out.println("Nome do Pai: " + nomePai);
+        System.out.println("Nome da Mãe: " + nomeMae);
+        System.out.println("----------------------------");
+    }
+}
+
+
+    public boolean getmail() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
@@ -114,6 +138,6 @@ public class Desbravador {
 
     public boolean getNomeMae() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 
 }
