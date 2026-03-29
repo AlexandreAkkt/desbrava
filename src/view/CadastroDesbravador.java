@@ -16,7 +16,7 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     public CadastroDesbravador(JFrame janela) {
     initComponents();
 }
-    Desbravador desbravador = new Desbravador ("","","","","","","","");
+    Desbravador desbravador = new Desbravador ("");
    
     
 
