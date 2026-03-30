@@ -319,7 +319,7 @@ public CadastroDesbravador() {
     
         
         if (!nome.isEmpty()) {
-            desbravador.
+            desbravador.setNomeCompleto(nome);
             System.out.print(desbravador.getNome());
         }
     }//GEN-LAST:event_nomeCompletoFocusLost
