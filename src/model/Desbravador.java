@@ -2,7 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
+
 package model;
+
+//import org.json.JSONObject;
+//import java.io.FileWriter;
+//import java.io.IOException;
+
+
+
+//public void slavarEmJson(){
+
+    //JSONObject json = new JSONObject();
+    
+    //json.put("nomeCompleto", this.nomeCompleto);
+
+
+
+//}
 
 /**
  *
@@ -10,13 +28,13 @@ package model;
  */
 public class Desbravador {
 
-    private String nomeCompleto;
-    private String email;
-    private String dataNascimento;
-    private String cpf;
-    private String rg;
-    private String nomePai;
-    private String nomeMae;
+    public String nomeCompleto;
+    public String email;
+    public String dataNascimento;
+    public String cpf;
+    public String rg;
+    public String nomePai;
+    public String nomeMae;
 
     // Construtor
   public Desbravador(String nomeCompleto){

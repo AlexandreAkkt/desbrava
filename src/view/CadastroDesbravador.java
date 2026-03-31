@@ -320,7 +320,7 @@ public CadastroDesbravador() {
         
         if (!nome.isEmpty()) {
             desbravador.setNomeCompleto(nome);
-            System.out.print(desbravador.getNome());
+           System.out.print(desbravador.getNomeCompleto());
         }
     }//GEN-LAST:event_nomeCompletoFocusLost
 
@@ -422,7 +422,8 @@ public CadastroDesbravador() {
     private javax.swing.JToggleButton voltar;
     // End of variables declaration//GEN-END:variables
 
-    private void dispose() {
+    public void dispose() {
+        
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
