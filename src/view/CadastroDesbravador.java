@@ -16,7 +16,7 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     public CadastroDesbravador(JFrame janela) {
     initComponents();
 }
-    Desbravador desbravador = new Desbravador ("");
+    Desbravador desbravador = new Desbravador ("", "", "", "", "", "", "");
    
     
 
@@ -295,7 +295,20 @@ public CadastroDesbravador() {
     }//GEN-LAST:event_NomeMaeActionPerformed
 
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
- 
+        System.out.println("Proxímo");
+
+    desbravador.setNomeCompleto(nomeCompleto.getText());
+    desbravador.setEmail(email.getText());
+    desbravador.setDataNascimento(dataNasc.getText());
+    desbravador.setCpf(Cpf.getText());
+    desbravador.setRg(Rg.getText());
+    desbravador.setNomePai(NomePai.getText());
+    desbravador.setNomeMae(NomeMae.getText());
+
+    
+    desbravador.salvarEmJson();
+
+    System.out.println("Salvo");
    
 
     }//GEN-LAST:event_ProximoActionPerformed

@@ -7,6 +7,11 @@
 package model;
 
 //import org.json.JSONObject;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import org.json.JSONObject;
+
 //import java.io.FileWriter;
 //import java.io.IOException;
 
@@ -36,8 +41,29 @@ public class Desbravador {
     public String nomePai;
     public String nomeMae;
 
+    
+    public void salvarEmJson() {
+
+    JSONObject json = new JSONObject();
+
+    json.put("nomeCompleto", this.nomeCompleto);
+    json.put("email", this.email);
+    json.put("dataNascimento", this.dataNascimento);
+    json.put("cpf", this.cpf);
+    json.put("rg", this.rg);
+    json.put("nomePai", this.nomePai);
+    json.put("nomeMae", this.nomeMae);
+
+    try (FileWriter file = new FileWriter("desbravador.json")) {
+        file.write(json.toString(4));
+        System.out.println(" salvo com sucesso!");
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
     // Construtor
-  public Desbravador(String nomeCompleto){
+  public Desbravador(String nomeCompleto, String email, String dataNascimento,
+                       String cpf, String rg, String nomePai, String nomeMae) {
   
   
   
