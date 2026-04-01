@@ -12,20 +12,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.json.JSONObject;
 
-//import java.io.FileWriter;
-//import java.io.IOException;
-
-
-
-//public void slavarEmJson(){
-
-    //JSONObject json = new JSONObject();
-    
-    //json.put("nomeCompleto", this.nomeCompleto);
-
-
-
-//}
 
 /**
  *
