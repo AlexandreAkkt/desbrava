@@ -84,7 +84,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="label2" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="button5" min="-2" pref="218" max="-2" attributes="0"/>
+                          <Component id="cadastroDeDesbravador" min="-2" pref="218" max="-2" attributes="0"/>
                           <Component id="label1" min="-2" max="-2" attributes="0"/>
                           <Component id="button7" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
                           <Component id="button6" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
@@ -135,7 +135,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="label1" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="button5" min="-2" max="-2" attributes="0"/>
+                  <Component id="cadastroDeDesbravador" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="button7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -163,7 +163,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="java.awt.Button" name="button5">
+        <Component class="java.awt.Button" name="cadastroDeDesbravador">
           <Properties>
             <Property name="actionCommand" type="java.lang.String" value="Cadastro de Desbravador "/>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -176,7 +176,7 @@
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Ca"/>
           </AccessibilityProperties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cadastroDeDesbravadorActionPerformed"/>
           </Events>
         </Component>
         <Component class="java.awt.Button" name="button6">

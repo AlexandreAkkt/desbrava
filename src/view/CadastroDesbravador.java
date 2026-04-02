@@ -309,6 +309,16 @@ public CadastroDesbravador() {
     desbravador.salvarEmJson();
 
     System.out.println("Salvo");
+    
+   
+    javax.swing.JFrame frame = new javax.swing.JFrame("Cadastro realizado");
+    frame.setContentPane(new CadastroSucesso());
+    frame.pack();
+    frame.setLocationRelativeTo(null);
+    frame.setVisible(true);
+
+    // fecha tela atual
+    javax.swing.SwingUtilities.getWindowAncestor(this).dispose();
    
 
     }//GEN-LAST:event_ProximoActionPerformed
@@ -327,7 +337,7 @@ public CadastroDesbravador() {
 
     private void nomeCompletoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeCompletoFocusLost
 
-        // 1. Captura o texto e limpa espaços extras
+
         String nome = nomeCompleto.getText().trim();
     
         
@@ -402,7 +412,7 @@ public CadastroDesbravador() {
     }//GEN-LAST:event_NomePaiFocusLost
 
     private void NomeMaeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NomeMaeFocusLost
-        // TODO add your handling code here:
+        
          String nomeMaeTexto = NomeMae.getText().trim();
 
     if (!nomeMaeTexto.isEmpty()) {

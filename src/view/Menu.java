@@ -33,7 +33,7 @@ public class Menu extends javax.swing.JPanel {
         jCheckBox1 = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
         button1 = new java.awt.Button();
-        button5 = new java.awt.Button();
+        cadastroDeDesbravador = new java.awt.Button();
         button6 = new java.awt.Button();
         button7 = new java.awt.Button();
         button8 = new java.awt.Button();
@@ -71,13 +71,13 @@ public class Menu extends javax.swing.JPanel {
             }
         });
 
-        button5.setActionCommand("Cadastro de Desbravador ");
-        button5.setBackground(new java.awt.Color(255, 102, 0));
-        button5.setLabel("Cadastro de Desbravador ");
-        button5.setName("Cadastro de Desbravador"); // NOI18N
-        button5.addActionListener(new java.awt.event.ActionListener() {
+        cadastroDeDesbravador.setActionCommand("Cadastro de Desbravador ");
+        cadastroDeDesbravador.setBackground(new java.awt.Color(255, 102, 0));
+        cadastroDeDesbravador.setLabel("Cadastro de Desbravador ");
+        cadastroDeDesbravador.setName("Cadastro de Desbravador"); // NOI18N
+        cadastroDeDesbravador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button5ActionPerformed(evt);
+                cadastroDeDesbravadorActionPerformed(evt);
             }
         });
 
@@ -116,7 +116,7 @@ public class Menu extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(button5, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cadastroDeDesbravador, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(button7, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(button6, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -154,7 +154,7 @@ public class Menu extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cadastroDeDesbravador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(button7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -168,7 +168,7 @@ public class Menu extends javax.swing.JPanel {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        button5.getAccessibleContext().setAccessibleName("Ca");
+        cadastroDeDesbravador.getAccessibleContext().setAccessibleName("Ca");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -192,22 +192,23 @@ public class Menu extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_button4ActionPerformed
 
-    private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
+    private void cadastroDeDesbravadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroDeDesbravadorActionPerformed
         // TODO add your handling code here:
         // 1. Pega a janela que contém este painel
-    javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
-    
-    // 2. Cria o novo painel que você quer mostrar (ex: Menu)
-    view.Menu novoPainel = new view.Menu();
-    
-    // 3. Substitui o conteúdo da janela
-    janela.getContentPane().removeAll(); // Remove o painel atual (Start)
-    janela.getContentPane().add(new CadastroDesbravador()); // Adiciona o novo (Menu)
-    
-    // 4. Atualiza a interface
+  javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+    CadastroDesbravador novoPainel = new CadastroDesbravador();
+
+    janela.getContentPane().removeAll();
+    janela.getContentPane().add(novoPainel);
+
+    janela.pack(); 
+    janela.setLocationRelativeTo(null); // centraliza na tela
+
     janela.revalidate();
     janela.repaint();
-    }//GEN-LAST:event_button5ActionPerformed
+    
+    }//GEN-LAST:event_cadastroDeDesbravadorActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
         // TODO add your handling code here:
@@ -237,10 +238,10 @@ public class Menu extends javax.swing.JPanel {
     private java.awt.Button button2;
     private java.awt.Button button3;
     private java.awt.Button button4;
-    private java.awt.Button button5;
     private java.awt.Button button6;
     private java.awt.Button button7;
     private java.awt.Button button8;
+    private java.awt.Button cadastroDeDesbravador;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
