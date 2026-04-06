@@ -56,7 +56,7 @@ public class CadastroSucesso extends javax.swing.JPanel {
         label2 = new java.awt.Label();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        MenuInicial = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -111,7 +111,12 @@ public class CadastroSucesso extends javax.swing.JPanel {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/CadastroComSucesso.png"))); // NOI18N
 
-        jButton1.setText("Menu inicial ");
+        MenuInicial.setText("Menu inicial ");
+        MenuInicial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuInicialActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -123,7 +128,7 @@ public class CadastroSucesso extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(MenuInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(70, 70, 70))
         );
         jPanel1Layout.setVerticalGroup(
@@ -132,7 +137,7 @@ public class CadastroSucesso extends javax.swing.JPanel {
                 .addGap(29, 29, 29)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
-                .addComponent(jButton1)
+                .addComponent(MenuInicial)
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
@@ -154,9 +159,27 @@ public class CadastroSucesso extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void MenuInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuInicialActionPerformed
+   java.awt.Window window = javax.swing.SwingUtilities.getWindowAncestor(this);
+
+    // Verifica se é um JFrame
+    if (window instanceof javax.swing.JFrame) {
+        javax.swing.JFrame frame = (javax.swing.JFrame) window;
+
+        
+        frame.setContentPane(new Menu());// Troca o conteúdo da janela
+
+        
+        frame.pack(); // Atualiza corretamente a tela
+        frame.setLocationRelativeTo(null);
+        frame.revalidate();
+        frame.repaint();
+        }
+    }//GEN-LAST:event_MenuInicialActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton MenuInicial;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -193,17 +193,15 @@ public class Menu extends javax.swing.JPanel {
     }//GEN-LAST:event_button4ActionPerformed
 
     private void cadastroDeDesbravadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroDeDesbravadorActionPerformed
-        // TODO add your handling code here:
-        // 1. Pega a janela que contém este painel
-  javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
     CadastroDesbravador novoPainel = new CadastroDesbravador();
 
-    janela.getContentPane().removeAll();
+    janela.getContentPane().removeAll(); // ❌ PROBLEMA
     janela.getContentPane().add(novoPainel);
 
     janela.pack(); 
-    janela.setLocationRelativeTo(null); // centraliza na tela
+    janela.setLocationRelativeTo(null);
 
     janela.revalidate();
     janela.repaint();
