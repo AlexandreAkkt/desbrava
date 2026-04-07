@@ -1,4 +1,5 @@
 package view;
+
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import model.Desbravador;
@@ -11,19 +12,18 @@ public class CadastroDesbravador extends javax.swing.JPanel {
 
     /**
      * Creates new form CadastroDesbravador
+     *
      * @param janela
      */
     public CadastroDesbravador(JFrame janela) {
-    initComponents();
-}
-    Desbravador desbravador = new Desbravador ("", "", "", "", "", "", "");
-   
-    
+        initComponents();
+    }
+    Desbravador desbravador = new Desbravador("", "", "", "", "", "", "");
 
 // mantém esse se o NetBeans usar internamente
-public CadastroDesbravador() {
-    initComponents();
-}
+    public CadastroDesbravador() {
+        initComponents();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -267,7 +267,7 @@ public CadastroDesbravador() {
 
     private void nomeCompletoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeCompletoActionPerformed
         // TODO add your handling code here:   
-        
+
     }//GEN-LAST:event_nomeCompletoActionPerformed
 
     private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
@@ -297,129 +297,126 @@ public CadastroDesbravador() {
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
         System.out.println("Proxímo");
 
-    desbravador.setNomeCompleto(nomeCompleto.getText());
-    desbravador.setEmail(email.getText());
-    desbravador.setDataNascimento(dataNasc.getText());
-    desbravador.setCpf(Cpf.getText());
-    desbravador.setRg(Rg.getText());
-    desbravador.setNomePai(NomePai.getText());
-    desbravador.setNomeMae(NomeMae.getText());
+        desbravador.setNomeCompleto(nomeCompleto.getText());
+        desbravador.setEmail(email.getText());
+        desbravador.setDataNascimento(dataNasc.getText());
+        desbravador.setCpf(Cpf.getText());
+        desbravador.setRg(Rg.getText());
+        desbravador.setNomePai(NomePai.getText());
+        desbravador.setNomeMae(NomeMae.getText());
 
-    
-    desbravador.salvarEmJson();
+        desbravador.cadastrarDesbravador();
 
-    System.out.println("Salvo");
-    
-   
-    javax.swing.JFrame frame = new javax.swing.JFrame("Cadastro realizado");
-    frame.setContentPane(new CadastroSucesso());
-    frame.pack();
-    frame.setLocationRelativeTo(null);
-    frame.setVisible(true);
+        System.out.println("Desbravador salvo com sucesso");
 
-    // fecha tela atual
-    javax.swing.SwingUtilities.getWindowAncestor(this).dispose();
-   
+        // 1. Pega a janela que contém este painel
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+        // 2. Cria o novo painel que você quer mostrar (ex: Menu)
+        view.CadastroSucesso novoPainel = new view.CadastroSucesso();
+
+        // 3. Substitui o conteúdo da janela
+        janela.getContentPane().removeAll(); // Remove o painel atual (Start)
+        janela.getContentPane().add(novoPainel); // Adiciona o novo (Menu)
+
+        // 4. Atualiza a interface
+        janela.revalidate();
+        janela.repaint();
+
 
     }//GEN-LAST:event_ProximoActionPerformed
 
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
-   {                                               
-     JOptionPane.showMessageDialog(this, "Clique detectado!");
+        {
+            JOptionPane.showMessageDialog(this, "Clique detectado!");
 
-        CadastroSucesso tela = new CadastroSucesso();
-        tela.setVisible(true);
+            CadastroSucesso tela = new CadastroSucesso();
+            tela.setVisible(true);
 
-    this.dispose();
-    }                                              
+            this.dispose();
+        }
 
     }//GEN-LAST:event_voltarActionPerformed
 
     private void nomeCompletoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeCompletoFocusLost
 
-
         String nome = nomeCompleto.getText().trim();
-    
-        
+
         if (!nome.isEmpty()) {
             desbravador.setNomeCompleto(nome);
-           System.out.print(desbravador.getNomeCompleto());
+            System.out.print(desbravador.getNomeCompleto());
         }
     }//GEN-LAST:event_nomeCompletoFocusLost
 
     private void emailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_emailFocusLost
         // TODO add your handling code here:,
-        
+
         String emailValue = email.getText().trim();
-        
+
         if (!emailValue.isEmpty()) {
             desbravador.setEmail(emailValue);
             System.out.print(desbravador.getEmail());
         }
-        
-        
+
+
     }//GEN-LAST:event_emailFocusLost
 
     private void dataNascFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_dataNascFocusLost
         // TODO add your handling code here:
-        
+
         String dataNascTexto = dataNasc.getText().trim();
 
-    
         if (!dataNascTexto.isEmpty()) {
-        desbravador.setDataNascimento(dataNascTexto);
-        System.out.print(desbravador.getDataNascimento());
-        
+            desbravador.setDataNascimento(dataNascTexto);
+            System.out.print(desbravador.getDataNascimento());
+
         }
-      
+
     }//GEN-LAST:event_dataNascFocusLost
 
     private void CpfFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_CpfFocusLost
         // TODO add your handling code here:
-     
-    String cpfTexto = Cpf.getText().trim();
 
-    
-    if (!cpfTexto.isEmpty()) {
-        desbravador.setCpf(cpfTexto);
-        System.out.print(desbravador.getCpf());
+        String cpfTexto = Cpf.getText().trim();
+
+        if (!cpfTexto.isEmpty()) {
+            desbravador.setCpf(cpfTexto);
+            System.out.print(desbravador.getCpf());
         }
-    
+
     }//GEN-LAST:event_CpfFocusLost
 
     private void RgFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_RgFocusLost
         // TODO add your handling code here:
         String rgTexto = Rg.getText().trim();
 
-    
-    if (!rgTexto.isEmpty()) {
-        desbravador.setRg(rgTexto);
-        System.out.print(desbravador.getRg());
+        if (!rgTexto.isEmpty()) {
+            desbravador.setRg(rgTexto);
+            System.out.print(desbravador.getRg());
         }
     }//GEN-LAST:event_RgFocusLost
 
     private void NomePaiFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NomePaiFocusLost
         // TODO add your handling code here:
-          String nomePaiTexto = NomePai.getText().trim();
+        String nomePaiTexto = NomePai.getText().trim();
 
-   
-    if (!nomePaiTexto.isEmpty()) {
-        desbravador.setNomePai(nomePaiTexto);
-        System.out.println(desbravador.getNomePai());
-    }
-        
-        
+        if (!nomePaiTexto.isEmpty()) {
+            desbravador.setNomePai(nomePaiTexto);
+            System.out.println(desbravador.getNomePai());
+        }
+
+
     }//GEN-LAST:event_NomePaiFocusLost
 
     private void NomeMaeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NomeMaeFocusLost
-        
-         String nomeMaeTexto = NomeMae.getText().trim();
 
-    if (!nomeMaeTexto.isEmpty()) {
-        desbravador.setNomeMae(nomeMaeTexto);
-        System.out.println(desbravador.getNomeMae());
-        
-    }
+        String nomeMaeTexto = NomeMae.getText().trim();
+
+        if (!nomeMaeTexto.isEmpty()) {
+            desbravador.setNomeMae(nomeMaeTexto);
+            System.out.println(desbravador.getNomeMae());
+
+        }
     }//GEN-LAST:event_NomeMaeFocusLost
 
 
@@ -446,7 +443,7 @@ public CadastroDesbravador() {
     // End of variables declaration//GEN-END:variables
 
     public void dispose() {
-        
+
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

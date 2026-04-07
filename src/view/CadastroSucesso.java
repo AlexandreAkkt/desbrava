@@ -14,17 +14,16 @@ public class CadastroSucesso extends javax.swing.JPanel {
      * Creates new form DesbravadorEnd
      */
     public CadastroSucesso() {
-    initComponents();
+        initComponents();
 
-    java.net.URL imgURL = getClass().getResource("/static/CadastroComSucesso.png");
+        java.net.URL imgURL = getClass().getResource("/static/CadastroComSucesso.png");
 
-    if (imgURL != null) {
-        jLabel3.setIcon(new javax.swing.ImageIcon(imgURL));
-    } else {
-        System.out.println("Imagem não encontrada: /static/CadastroComSucesso.png");
+        if (imgURL != null) {
+            jLabel3.setIcon(new javax.swing.ImageIcon(imgURL));
+        } else {
+            System.out.println("Imagem não encontrada: /static/CadastroComSucesso.png");
+        }
     }
-}
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -160,21 +159,21 @@ public class CadastroSucesso extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MenuInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuInicialActionPerformed
-   java.awt.Window window = javax.swing.SwingUtilities.getWindowAncestor(this);
+        // 1. Pega a janela que contém este painel
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-    // Verifica se é um JFrame
-    if (window instanceof javax.swing.JFrame) {
-        javax.swing.JFrame frame = (javax.swing.JFrame) window;
+        // 2. Cria o novo painel que você quer mostrar (ex: Menu)
+        view.Menu novoPainel = new view.Menu();
 
-        
-        frame.setContentPane(new Menu());// Troca o conteúdo da janela
+        // 3. Substitui o conteúdo da janela
+        janela.getContentPane().removeAll(); // Remove o painel atual (Start)
+        janela.getContentPane().add(novoPainel); // Adiciona o novo (Menu)
 
-        
-        frame.pack(); // Atualiza corretamente a tela
-        frame.setLocationRelativeTo(null);
-        frame.revalidate();
-        frame.repaint();
-        }
+        // 4. Atualiza a interface
+        janela.revalidate();
+        janela.repaint();
+
+
     }//GEN-LAST:event_MenuInicialActionPerformed
 
 

@@ -215,11 +215,12 @@ public class Menu extends javax.swing.JPanel {
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
         // TODO add your handling code here:
-              // 1. Pega a janela que contém este painel
+     
+    // 1. Pega a janela que contém este painel
     javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
     
     // 2. Cria o novo painel que você quer mostrar (ex: Menu)
-    view.Menu novoPainel = new view.Menu();
+    view.Start novoPainel = new view.Start();
     
     // 3. Substitui o conteúdo da janela
     janela.getContentPane().removeAll(); // Remove o painel atual (Start)
