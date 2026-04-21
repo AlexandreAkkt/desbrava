@@ -124,5 +124,14 @@
         "email": "o",
         "nomeMae": "o",
         "nomeCompleto": "o"
+    },
+    {
+        "rg": "123456789",
+        "cpf": "123456789",
+        "nomePai": "Luis",
+        "dataNascimento": "12232026",
+        "email": "marciodosanjos@gmail.com",
+        "nomeMae": "Madre",
+        "nomeCompleto": "Marcio"
     }
 ]

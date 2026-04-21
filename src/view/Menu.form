@@ -89,7 +89,7 @@
                           <Component id="button7" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
                           <Component id="button6" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
                           <Component id="button1" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
-                          <Component id="button8" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
+                          <Component id="visualizarDesbravadores" alignment="1" min="-2" pref="218" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -143,7 +143,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="button1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="button8" min="-2" max="-2" attributes="0"/>
+                  <Component id="visualizarDesbravadores" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="24" max="32767" attributes="0"/>
@@ -195,7 +195,7 @@
             <Property name="label" type="java.lang.String" value="Ficha de Classes "/>
           </Properties>
         </Component>
-        <Component class="java.awt.Button" name="button8">
+        <Component class="java.awt.Button" name="visualizarDesbravadores">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="66" red="ff" type="rgb"/>
@@ -203,7 +203,7 @@
             <Property name="label" type="java.lang.String" value="Visualizar Desbravadores "/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visualizarDesbravadoresActionPerformed"/>
           </Events>
         </Component>
         <Component class="java.awt.Label" name="label1">
