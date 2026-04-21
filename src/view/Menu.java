@@ -212,7 +212,7 @@ public class Menu extends javax.swing.JPanel {
         // TODO add your handling code here:
         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-        ListDesbravadores novoPainel = new ListDesbravadores();
+        ListaDesbravadores novoPainel = new ListaDesbravadores();
 
         janela.getContentPane().removeAll(); // ❌ PROBLEMA
         janela.getContentPane().add(novoPainel);

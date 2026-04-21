@@ -1,5 +1,4 @@
 package view;
-
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import model.Desbravador;

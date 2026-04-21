@@ -9,14 +9,13 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 import controller.DesbravadorController;
 
-public class ListDesbravadores extends javax.swing.JPanel {
+public class ListaDesbravadores extends javax.swing.JPanel {
 
-    private DefaultListModel modeloLista = new DefaultListModel();
+    private DefaultListModel modeloLista = new DefaultListModel(); //array ["", ""]
 
-    private void getDesbravadoresName() {
+    private void pegarNomesDosDesbravadores() {
 
         JSONArray array = DesbravadorController.mostrarUsuarios();
-        modeloLista.clear();
 
         for (int i = 0; i < array.length(); i++) {
             JSONObject obj = array.getJSONObject(i);
@@ -26,11 +25,10 @@ public class ListDesbravadores extends javax.swing.JPanel {
 
     }
 
-    public ListDesbravadores() {
+    public ListaDesbravadores() {
         initComponents();
-
         listaDesbravadores.setModel(modeloLista);
-        getDesbravadoresName();
+        pegarNomesDosDesbravadores();
     }
 
     /**
@@ -82,8 +80,9 @@ public class ListDesbravadores extends javax.swing.JPanel {
             int index = listaDesbravadores.getSelectedIndex();
 
             if (index != 1) {
-                JSONArray array = controller.DesbravadorController.mostrarUsuarios();
-                JSONObject selecionado = array.getJSONObject(index);
+                JSONArray array = controller.DesbravadorController.mostrarUsuarios(); //JSONArray é equivalente de ArrayList
+                JSONObject selecionado = array.getJSONObject(index); //JSONOBject == objeto 
+
                 
                 javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
