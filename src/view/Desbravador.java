@@ -84,7 +84,19 @@ public class Desbravador extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+  // 1. Pega a janela atual (JFrame)
+    javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+    // 2. Cria o novo painel (Menu)
+    view.Menu novoPainel = new view.Menu();
+
+    // 3. Remove o painel atual e adiciona o novo
+    janela.getContentPane().removeAll();
+    janela.getContentPane().add(novoPainel);
+
+    // 4. Atualiza a tela
+    janela.revalidate();
+    janela.repaint();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

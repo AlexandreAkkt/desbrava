@@ -61,13 +61,13 @@ public class Start extends javax.swing.JPanel {
         jTextArea3 = new javax.swing.JTextArea();
         textField2 = new java.awt.TextField();
         jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        entrar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        label2 = new java.awt.Label();
+        criarconta = new javax.swing.JButton();
+        desbrava = new java.awt.Label();
         jLabel4 = new javax.swing.JLabel();
+        senha = new java.awt.TextField();
+        digiteSeuEmail = new java.awt.TextField();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -199,36 +199,52 @@ public class Start extends javax.swing.JPanel {
         jPanel2.setToolTipText("dees");
         jPanel2.setLayout(null);
 
-        jButton3.setBackground(new java.awt.Color(255, 102, 0));
-        jButton3.setText("Senha");
-        jPanel2.add(jButton3);
-        jButton3.setBounds(33, 355, 150, 23);
-
-        jButton4.setBackground(new java.awt.Color(255, 102, 0));
-        jButton4.setText("E-mail");
-        jPanel2.add(jButton4);
-        jButton4.setBounds(33, 326, 150, 23);
-
-        jButton5.setBackground(new java.awt.Color(255, 102, 0));
-        jButton5.setText("Entrar");
-        jPanel2.add(jButton5);
-        jButton5.setBounds(67, 390, 92, 15);
+        entrar.setBackground(new java.awt.Color(255, 102, 0));
+        entrar.setText("Entrar");
+        jPanel2.add(entrar);
+        entrar.setBounds(70, 410, 92, 15);
         jPanel2.add(jLabel3);
         jLabel3.setBounds(15, 6, 187, 0);
 
-        jButton6.setBackground(new java.awt.Color(255, 102, 0));
-        jButton6.setText("Criar conta");
-        jPanel2.add(jButton6);
-        jButton6.setBounds(67, 411, 92, 17);
+        criarconta.setBackground(new java.awt.Color(255, 102, 0));
+        criarconta.setText("Criar conta");
+        jPanel2.add(criarconta);
+        criarconta.setBounds(70, 430, 92, 17);
 
-        label2.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
-        label2.setText("Desbrava ");
-        jPanel2.add(label2);
-        label2.setBounds(23, 212, 187, 73);
+        desbrava.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        desbrava.setText("Desbrava ");
+        jPanel2.add(desbrava);
+        desbrava.setBounds(23, 212, 187, 73);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img soldados  (.png"))); // NOI18N
         jPanel2.add(jLabel4);
         jLabel4.setBounds(21, 18, 191, 184);
+
+        senha.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                senhaFocusLost(evt);
+            }
+        });
+        senha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                senhaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(senha);
+        senha.setBounds(20, 370, 190, 20);
+
+        digiteSeuEmail.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                digiteSeuEmailFocusLost(evt);
+            }
+        });
+        digiteSeuEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                digiteSeuEmailActionPerformed(evt);
+            }
+        });
+        jPanel2.add(digiteSeuEmail);
+        digiteSeuEmail.setBounds(20, 340, 190, 20);
 
         add(jPanel2);
         jPanel2.setBounds(20, 20, 230, 460);
@@ -262,15 +278,33 @@ public class Start extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
+    private void senhaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_senhaFocusLost
+        // TODO add your handling code here:,
+
+       
+    }//GEN-LAST:event_senhaFocusLost
+
+    private void senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_senhaActionPerformed
+
+    private void digiteSeuEmailFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_digiteSeuEmailFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_digiteSeuEmailFocusLost
+
+    private void digiteSeuEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_digiteSeuEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_digiteSeuEmailActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button button1;
+    private javax.swing.JButton criarconta;
+    private java.awt.Label desbrava;
+    private java.awt.TextField digiteSeuEmail;
+    private javax.swing.JButton entrar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
@@ -302,7 +336,7 @@ public class Start extends javax.swing.JPanel {
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JToggleButton jToggleButton1;
     private java.awt.Label label1;
-    private java.awt.Label label2;
+    private java.awt.TextField senha;
     private java.awt.TextField textField1;
     private java.awt.TextField textField2;
     // End of variables declaration//GEN-END:variables

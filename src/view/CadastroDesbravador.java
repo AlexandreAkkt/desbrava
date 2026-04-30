@@ -327,12 +327,18 @@ public class CadastroDesbravador extends javax.swing.JPanel {
 
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
         {
-            JOptionPane.showMessageDialog(this, "Clique detectado!");
+              javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-            CadastroSucesso tela = new CadastroSucesso();
-            tela.setVisible(true);
+    // 2. Cria o novo painel (Menu)
+    view.Menu novoPainel = new view.Menu();
 
-            this.dispose();
+    // 3. Remove o painel atual e adiciona o novo
+    janela.getContentPane().removeAll();
+    janela.getContentPane().add(novoPainel);
+
+    // 4. Atualiza a tela
+    janela.revalidate();
+    janela.repaint();
         }
 
     }//GEN-LAST:event_voltarActionPerformed

@@ -37,6 +37,11 @@ public class EditadoComSucesso extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/EditadoComSucesso.png"))); // NOI18N
 
         jButton1.setText("Menu inicial");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -79,6 +84,21 @@ public class EditadoComSucesso extends javax.swing.JPanel {
                 .addContainerGap(43, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+        // 2. Cria o novo painel que você quer mostrar (ex: Menu)
+        view.Menu novoPainel = new view.Menu();
+
+        // 3. Substitui o conteúdo da janela
+        janela.getContentPane().removeAll(); // Remove o painel atual (Start)
+        janela.getContentPane().add(novoPainel); // Adiciona o novo (Menu)
+
+        // 4. Atualiza a interface
+        janela.revalidate();
+        janela.repaint();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
