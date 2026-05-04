@@ -1,7 +1,8 @@
 package view;
-import javax.swing.JOptionPane;
+
 import javax.swing.JFrame;
 import model.Desbravador;
+import org.json.JSONObject;
 
 /**
  *
@@ -14,12 +15,23 @@ public class CadastroDesbravador extends javax.swing.JPanel {
      *
      * @param janela
      */
+    Desbravador desbravador = new Desbravador("", "", "", "", "", "", "");
+
     public CadastroDesbravador(JFrame janela) {
         initComponents();
     }
-    Desbravador desbravador = new Desbravador("", "", "", "", "", "", "");
 
-// mantém esse se o NetBeans usar internamente
+    // mantém esse se o NetBeans usar internamente
+    public CadastroDesbravador(JSONObject dados) {
+        initComponents();
+
+        if (!dados.isEmpty()) {
+            nomeCompleto.setText((String) dados.get("nomeCompleto"));
+        }
+
+    }
+
+    // mantém esse se o NetBeans usar internamente
     public CadastroDesbravador() {
         initComponents();
     }
@@ -327,18 +339,18 @@ public class CadastroDesbravador extends javax.swing.JPanel {
 
     private void voltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarActionPerformed
         {
-              javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+            javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-    // 2. Cria o novo painel (Menu)
-    view.Menu novoPainel = new view.Menu();
+            // 2. Cria o novo painel (Menu)
+            view.Menu novoPainel = new view.Menu();
 
-    // 3. Remove o painel atual e adiciona o novo
-    janela.getContentPane().removeAll();
-    janela.getContentPane().add(novoPainel);
+            // 3. Remove o painel atual e adiciona o novo
+            janela.getContentPane().removeAll();
+            janela.getContentPane().add(novoPainel);
 
-    // 4. Atualiza a tela
-    janela.revalidate();
-    janela.repaint();
+            // 4. Atualiza a tela
+            janela.revalidate();
+            janela.repaint();
         }
 
     }//GEN-LAST:event_voltarActionPerformed

@@ -22,6 +22,7 @@ public class DesbravadorController {
             // Se o arquivo não existir, cria um com array vazio
             if (!file.exists()) {
                 Files.write(Paths.get(DB_PATH), "{}".getBytes());
+                System.out.print("DB não existe. Criando um novo");
             }
 
             String content = new String(Files.readAllBytes(Paths.get(DB_PATH)));
@@ -30,7 +31,7 @@ public class DesbravadorController {
             if (content.trim().isEmpty() || !content.trim().startsWith("[")) {
                 return new JSONArray("[]");
             }
-
+            
             return new JSONArray(content);
         } catch (IOException e) {
             System.err.println("Erro ao ler JSON: " + e.getMessage());

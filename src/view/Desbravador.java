@@ -12,13 +12,22 @@ import org.json.JSONObject;
  */
 public class Desbravador extends javax.swing.JPanel {
 
+    private JSONObject dados;
+    
     public Desbravador(JSONObject dados) {
         initComponents();
-        nomeCompleto.setText(dados.optString("nomeCompleto", ""));
+        this.dados = dados;
         
+        nomeCompleto.setText(dados.optString("nomeCompleto", ""));
+        email.setText(dados.optString("email", ""));
+        cpf.setText(dados.optString("cpf", ""));
+        rg.setText(dados.optString("rg", ""));
+        dataNascimento.setText(dados.optString("dataNascimento", ""));
+        nomeMae.setText(dados.optString("nomeMae", ""));
+        nomePai.setText(dados.optString("nomePai", ""));
+
     }
-    
-    
+
     public Desbravador() {
         initComponents();
     }
@@ -32,79 +41,200 @@ public class Desbravador extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nomeCompleto = new java.awt.TextField();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        nomeCompleto = new javax.swing.JLabel();
+        email = new javax.swing.JLabel();
+        dataNascimento = new javax.swing.JLabel();
+        cpf = new javax.swing.JLabel();
+        rg = new javax.swing.JLabel();
+        nomePai = new javax.swing.JLabel();
+        nomeMae = new javax.swing.JLabel();
+        emailLabel = new javax.swing.JLabel();
+        nomeCompletoLabel1 = new javax.swing.JLabel();
+        dataNascimentoLabel = new javax.swing.JLabel();
+        rgLabel = new javax.swing.JLabel();
+        cpfLabel = new javax.swing.JLabel();
+        nomeMaeLabel = new javax.swing.JLabel();
+        nomePaiLabel = new javax.swing.JLabel();
+        editarBtn = new javax.swing.JButton();
+        voltarBtn1 = new javax.swing.JButton();
 
-        nomeCompleto.setText("textField1");
+        setBackground(new java.awt.Color(255, 153, 51));
 
-        setBackground(new java.awt.Color(0, 0, 0));
+        nomeCompleto.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        nomeCompleto.setText("Nome Completo");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desbrava/src/static/LençoD.png"))); // NOI18N
+        email.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        email.setText("jLabel1");
 
-        jButton1.setText("Voltar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        dataNascimento.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        dataNascimento.setText("jLabel1");
+
+        cpf.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        cpf.setText("jLabel1");
+
+        rg.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        rg.setText("jLabel1");
+
+        nomePai.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        nomePai.setText("jLabel1");
+
+        nomeMae.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        nomeMae.setText("jLabel1");
+
+        emailLabel.setText("E-mail:");
+
+        nomeCompletoLabel1.setText("Nome completo:");
+
+        dataNascimentoLabel.setText("E-mail:");
+
+        rgLabel.setText("RG:");
+
+        cpfLabel.setText("CPF:");
+
+        nomeMaeLabel.setText("Nome da mãe:");
+
+        nomePaiLabel.setText("Nome do pai:");
+
+        editarBtn.setText("Editar");
+        editarBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                editarBtnActionPerformed(evt);
             }
         });
 
-        jTextPane1.setBackground(new java.awt.Color(255, 102, 0));
-        jScrollPane1.setViewportView(jTextPane1);
+        voltarBtn1.setText("Voltar");
+        voltarBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                voltarBtn1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(93, 93, 93)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                            .addComponent(emailLabel)
+                            .addComponent(nomeCompletoLabel1)
+                            .addComponent(dataNascimentoLabel)
+                            .addComponent(rgLabel)
+                            .addComponent(cpfLabel)
+                            .addComponent(nomePaiLabel)
+                            .addComponent(nomeMaeLabel))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nomeMae, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(email, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(nomePai, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rg, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpf, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(dataNascimento, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(voltarBtn1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(editarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(17, 17, 17)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(nomeCompleto, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nomeCompletoLabel1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(dataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(emailLabel))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(dataNascimentoLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rg, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rgLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(22, 22, 22))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nomePai, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cpfLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nomeMae, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nomeMaeLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nomePaiLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addComponent(editarBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(voltarBtn1)
+                .addGap(86, 86, 86))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-  // 1. Pega a janela atual (JFrame)
-    javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+    private void voltarBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarBtn1ActionPerformed
+        // TODO add your handling code here:
 
-    // 2. Cria o novo painel (Menu)
-    view.Menu novoPainel = new view.Menu();
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-    // 3. Remove o painel atual e adiciona o novo
-    janela.getContentPane().removeAll();
-    janela.getContentPane().add(novoPainel);
+        // 2. Cria o novo painel (Menu)
+        view.ListaDesbravadores desbravadores = new view.ListaDesbravadores();
 
-    // 4. Atualiza a tela
-    janela.revalidate();
-    janela.repaint();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        // 3. Remove o painel atual e adiciona o novo
+        janela.getContentPane().removeAll();
+        janela.getContentPane().add(desbravadores);
+
+        // 4. Atualiza a tela
+        janela.revalidate();
+        janela.repaint();
+    }//GEN-LAST:event_voltarBtn1ActionPerformed
+
+    private void editarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarBtnActionPerformed
+        // TODO add your handling code here:
+        
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+        // 2. Cria o novo painel (Menu)
+        view.CadastroDesbravador cadastrarDesbravador = new view.CadastroDesbravador(dados);
+
+        // 3. Remove o painel atual e adiciona o novo
+        janela.getContentPane().removeAll();
+        janela.getContentPane().add(cadastrarDesbravador);
+
+        // 4. Atualiza a tela
+        janela.revalidate();
+        janela.repaint();
+    }//GEN-LAST:event_editarBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
-    private java.awt.TextField nomeCompleto;
+    private javax.swing.JLabel cpf;
+    private javax.swing.JLabel cpfLabel;
+    private javax.swing.JLabel dataNascimento;
+    private javax.swing.JLabel dataNascimentoLabel;
+    private javax.swing.JButton editarBtn;
+    private javax.swing.JLabel email;
+    private javax.swing.JLabel emailLabel;
+    private javax.swing.JLabel nomeCompleto;
+    private javax.swing.JLabel nomeCompletoLabel1;
+    private javax.swing.JLabel nomeMae;
+    private javax.swing.JLabel nomeMaeLabel;
+    private javax.swing.JLabel nomePai;
+    private javax.swing.JLabel nomePaiLabel;
+    private javax.swing.JLabel rg;
+    private javax.swing.JLabel rgLabel;
+    private javax.swing.JButton voltarBtn1;
     // End of variables declaration//GEN-END:variables
 }

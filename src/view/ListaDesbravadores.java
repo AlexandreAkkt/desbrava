@@ -42,7 +42,6 @@ public class ListaDesbravadores extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         listaDesbravadores = new javax.swing.JList<>();
-        jLabel2 = new javax.swing.JLabel();
         Voltar = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(0, 0, 0));
@@ -59,9 +58,6 @@ public class ListaDesbravadores extends javax.swing.JPanel {
             }
         });
         jScrollPane1.setViewportView(listaDesbravadores);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desbrava/src/static/LençoD.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
 
         Voltar.setText("Voltar");
         Voltar.addActionListener(new java.awt.event.ActionListener() {
@@ -80,9 +76,6 @@ public class ListaDesbravadores extends javax.swing.JPanel {
                         .addGap(17, 17, 17)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(79, 79, 79)
                         .addComponent(Voltar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(25, Short.MAX_VALUE))
@@ -90,9 +83,7 @@ public class ListaDesbravadores extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(89, 89, 89)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                 .addComponent(Voltar)
@@ -144,7 +135,6 @@ public class ListaDesbravadores extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Voltar;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> listaDesbravadores;
     // End of variables declaration//GEN-END:variables

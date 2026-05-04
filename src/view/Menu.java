@@ -213,7 +213,9 @@ public class Menu extends javax.swing.JPanel {
         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
         ListaDesbravadores novoPainel = new ListaDesbravadores();
-
+        System.out.print("tela aberta");
+        
+        
         janela.getContentPane().removeAll(); // ❌ PROBLEMA
         janela.getContentPane().add(novoPainel);
 
@@ -221,7 +223,7 @@ public class Menu extends javax.swing.JPanel {
         janela.setLocationRelativeTo(null);
 
         janela.revalidate();
-        janela.repaint();
+        janela.repaint(); 
 
     }//GEN-LAST:event_visualizarDesbravadoresActionPerformed
 
