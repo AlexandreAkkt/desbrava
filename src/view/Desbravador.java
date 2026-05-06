@@ -57,6 +57,7 @@ public class Desbravador extends javax.swing.JPanel {
         nomePaiLabel = new javax.swing.JLabel();
         editarBtn = new javax.swing.JButton();
         voltarBtn1 = new javax.swing.JButton();
+        deletarBtn2 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 153, 51));
 
@@ -109,6 +110,13 @@ public class Desbravador extends javax.swing.JPanel {
             }
         });
 
+        deletarBtn2.setText("Deletar");
+        deletarBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deletarBtn2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -139,7 +147,8 @@ public class Desbravador extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(voltarBtn1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(editarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(editarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(deletarBtn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(17, 17, 17)))
                 .addContainerGap())
         );
@@ -176,7 +185,9 @@ public class Desbravador extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nomePaiLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addComponent(deletarBtn2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(editarBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(voltarBtn1)
@@ -218,12 +229,39 @@ public class Desbravador extends javax.swing.JPanel {
         janela.repaint();
     }//GEN-LAST:event_editarBtnActionPerformed
 
+    private void deletarBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletarBtn2ActionPerformed
+        int confirm = javax.swing.JOptionPane.showConfirmDialog(
+        this,
+        "Tem certeza que deseja deletar este usuário?",
+        "Confirmação",
+        javax.swing.JOptionPane.YES_NO_OPTION
+    );
+
+    if (confirm == javax.swing.JOptionPane.YES_OPTION) {
+        
+        String cpfUsuario = dados.getString("cpf");
+
+        controller.DesbravadorController.deletarUsuario(cpfUsuario);
+
+        // Volta para lista após deletar
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+        view.ListaDesbravadores lista = new view.ListaDesbravadores();
+
+        janela.getContentPane().removeAll();
+        janela.getContentPane().add(lista);
+        janela.revalidate();
+        janela.repaint();
+    }
+    }//GEN-LAST:event_deletarBtn2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel cpf;
     private javax.swing.JLabel cpfLabel;
     private javax.swing.JLabel dataNascimento;
     private javax.swing.JLabel dataNascimentoLabel;
+    private javax.swing.JButton deletarBtn2;
     private javax.swing.JButton editarBtn;
     private javax.swing.JLabel email;
     private javax.swing.JLabel emailLabel;
