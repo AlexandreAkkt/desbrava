@@ -7,7 +7,7 @@ public class Menu extends javax.swing.JPanel {
     
     public Menu() {
         initComponents();
-        setPreferredSize(new java.awt.Dimension(900, 700));
+        
     }
 
     
@@ -49,9 +49,10 @@ public class Menu extends javax.swing.JPanel {
         jCheckBox1.setText("jCheckBox1");
 
         setBackground(new java.awt.Color(0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(427, 480));
+        setMaximumSize(new java.awt.Dimension(500, 500));
+        setPreferredSize(new java.awt.Dimension(500, 600));
 
-        jPanel1.setBackground(new java.awt.Color(255, 153, 0));
+        jPanel1.setBackground(new java.awt.Color(230, 126, 34));
         jPanel1.setPreferredSize(new java.awt.Dimension(230, 490));
 
         editarDesbravadoresbutton1.setBackground(new java.awt.Color(255, 102, 0));
@@ -121,7 +122,7 @@ public class Menu extends javax.swing.JPanel {
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(66, 66, 66)
@@ -166,22 +167,39 @@ public class Menu extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addGap(16, 16, 16)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(14, 14, 14)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 567, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button4ActionPerformed
+
+    private void visualizarDesbravadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarDesbravadoresActionPerformed
+        // TODO add your handling code here:
+        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
+
+        ListaDesbravadores novoPainel = new ListaDesbravadores();
+        System.out.print("tela aberta");
+
+        janela.getContentPane().removeAll(); // ❌ PROBLEMA
+        janela.getContentPane().add(novoPainel);
+
+        janela.pack();
+        janela.setLocationRelativeTo(null);
+
+        janela.revalidate();
+        janela.repaint();
+    }//GEN-LAST:event_visualizarDesbravadoresActionPerformed
 
     private void cadastroDeDesbravadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroDeDesbravadorActionPerformed
         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
@@ -196,27 +214,7 @@ public class Menu extends javax.swing.JPanel {
 
         janela.revalidate();
         janela.repaint();
-
     }//GEN-LAST:event_cadastroDeDesbravadorActionPerformed
-
-    private void visualizarDesbravadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualizarDesbravadoresActionPerformed
-        // TODO add your handling code here:
-        javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
-
-        ListaDesbravadores novoPainel = new ListaDesbravadores();
-        System.out.print("tela aberta");
-        
-        
-        janela.getContentPane().removeAll(); // ❌ PROBLEMA
-        janela.getContentPane().add(novoPainel);
-
-        janela.pack();
-        janela.setLocationRelativeTo(null);
-
-        janela.revalidate();
-        janela.repaint(); 
-
-    }//GEN-LAST:event_visualizarDesbravadoresActionPerformed
 
     private void editarDesbravadoresbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarDesbravadoresbutton1ActionPerformed
         // TODO add your handling code here:
