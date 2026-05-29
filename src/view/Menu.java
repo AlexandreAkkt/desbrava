@@ -206,7 +206,7 @@ public class Menu extends javax.swing.JPanel {
 
         CadastroDesbravador novoPainel = new CadastroDesbravador();
 
-        janela.getContentPane().removeAll(); // ❌ PROBLEMA
+        janela.getContentPane().removeAll();
         janela.getContentPane().add(novoPainel);
 
         janela.pack();
@@ -223,11 +223,11 @@ public class Menu extends javax.swing.JPanel {
         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
         // 2. Cria o novo painel que você quer mostrar (ex: Menu)
-        view.Start novoPainel = new view.Start();
+        view.BuscarDesbravador buscarDesbravador = new view.BuscarDesbravador();
 
         // 3. Substitui o conteúdo da janela
         janela.getContentPane().removeAll(); // Remove o painel atual (Start)
-        janela.getContentPane().add(new CadastroDesbravador()); // Adiciona o novo (Menu)
+        janela.getContentPane().add(buscarDesbravador); // Adiciona o novo (Menu)
 
         // 4. Atualiza a interface
         janela.revalidate();

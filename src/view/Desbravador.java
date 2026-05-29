@@ -218,7 +218,7 @@ public class Desbravador extends javax.swing.JPanel {
         javax.swing.JFrame janela = (javax.swing.JFrame) javax.swing.SwingUtilities.getWindowAncestor(this);
 
         // 2. Cria o novo painel (Menu)
-        view.CadastroDesbravador cadastrarDesbravador = new view.CadastroDesbravador(dados);
+        view.EditarDesbravador cadastrarDesbravador = new view.EditarDesbravador(dados);
 
         // 3. Remove o painel atual e adiciona o novo
         janela.getContentPane().removeAll();

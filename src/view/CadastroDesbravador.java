@@ -7,24 +7,12 @@ import org.json.JSONObject;
 
 public class CadastroDesbravador extends javax.swing.JPanel {
 
-   
     Desbravador desbravador = new Desbravador("", "", "", "", "", "", "");
 
     public CadastroDesbravador(JFrame janela) {
         initComponents();
     }
-
-    // mantém esse se o NetBeans usar internamente
-    public CadastroDesbravador(JSONObject dados) {
-        initComponents();
-
-        if (!dados.isEmpty()) {
-            nomeCompleto.setText((String) dados.get("nomeCompleto"));
-        }
-
-    }
-
-    // mantém esse se o NetBeans usar internamente
+   
     public CadastroDesbravador() {
         initComponents();
     }
@@ -301,6 +289,8 @@ public class CadastroDesbravador extends javax.swing.JPanel {
     private void ProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProximoActionPerformed
         System.out.println("Proxímo");
 
+     
+        
         desbravador.setNomeCompleto(nomeCompleto.getText());
         desbravador.setEmail(email.getText());
         desbravador.setDataNascimento(dataNasc.getText());

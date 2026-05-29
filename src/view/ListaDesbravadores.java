@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view;
-
 import javax.swing.DefaultListModel;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -11,7 +10,8 @@ import controller.DesbravadorController;
 
 public class ListaDesbravadores extends javax.swing.JPanel {
 
-    private DefaultListModel modeloLista = new DefaultListModel(); //array ["", ""]
+    //lista para nomes de desbravadores
+    private DefaultListModel modeloLista = new DefaultListModel(); //array ["ALe", "Soares"]
 
     private void pegarNomesDosDesbravadores() {
 
