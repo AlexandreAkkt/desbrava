@@ -1,11 +1,9 @@
 package controller;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.function.BooleanSupplier;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

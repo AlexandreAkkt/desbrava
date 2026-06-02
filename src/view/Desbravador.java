@@ -60,6 +60,7 @@ public class Desbravador extends javax.swing.JPanel {
         deletarBtn2 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 153, 51));
+        setMinimumSize(new java.awt.Dimension(500, 600));
 
         nomeCompleto.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         nomeCompleto.setText("Nome Completo");
@@ -82,7 +83,7 @@ public class Desbravador extends javax.swing.JPanel {
         nomeMae.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         nomeMae.setText("jLabel1");
 
-        emailLabel.setText("E-mail:");
+        emailLabel.setText("Data Nasc");
 
         nomeCompletoLabel1.setText("Nome completo:");
 
@@ -185,7 +186,7 @@ public class Desbravador extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nomePaiLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
                 .addComponent(deletarBtn2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(editarBtn)

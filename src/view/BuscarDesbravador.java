@@ -32,6 +32,8 @@ public class BuscarDesbravador extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         pesquisaInput = new java.awt.TextField();
 
+        setMinimumSize(new java.awt.Dimension(500, 600));
+
         jButton1.setText("Pesquisar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -40,6 +42,11 @@ public class BuscarDesbravador extends javax.swing.JPanel {
         });
 
         pesquisaInput.setText("Digite o CPF do desbravador");
+        pesquisaInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pesquisaInputActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -53,12 +60,12 @@ public class BuscarDesbravador extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(111, 111, 111)
                         .addComponent(jButton1)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(208, Short.MAX_VALUE)
+                .addContainerGap(396, Short.MAX_VALUE)
                 .addComponent(pesquisaInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(89, 89, 89)
                 .addComponent(jButton1)
@@ -89,6 +96,10 @@ public class BuscarDesbravador extends javax.swing.JPanel {
         janela.repaint();
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void pesquisaInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pesquisaInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pesquisaInputActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -280,8 +280,6 @@ public class Start extends javax.swing.JPanel {
 
     private void senhaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_senhaFocusLost
         // TODO add your handling code here:,
-
-       
     }//GEN-LAST:event_senhaFocusLost
 
     private void senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaActionPerformed

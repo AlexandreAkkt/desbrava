@@ -5,6 +5,9 @@
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="33" green="99" red="ff" type="rgb"/>
     </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[500, 600]"/>
+    </Property>
   </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -103,7 +106,7 @@
                   <Component id="email" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="nomePaiLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="81" max="32767" attributes="0"/>
+              <EmptySpace pref="160" max="32767" attributes="0"/>
               <Component id="deletarBtn2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="editarBtn" min="-2" max="-2" attributes="0"/>
@@ -173,7 +176,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="emailLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="E-mail:"/>
+        <Property name="text" type="java.lang.String" value="Data Nasc"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="nomeCompletoLabel1">

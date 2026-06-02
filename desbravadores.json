@@ -1,9 +1,11 @@
-[{
+[
+  {
     "rg": "123456789",
     "cpf": "123456789",
     "nomePai": "Luis",
-    "dataNascimento": "12232026",
+    "dataNascimento": "12122000",
     "email": "Maria Alves",
     "nomeMae": "Madre",
     "nomeCompleto": "Maria Sales"
-}]
+  }
+]
