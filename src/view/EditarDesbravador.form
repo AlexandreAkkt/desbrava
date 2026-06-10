@@ -36,7 +36,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="257" max="32767" attributes="0"/>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -45,7 +45,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="106" max="32767" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -61,55 +61,50 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="143" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="nomeCompleto" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="Email" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="email" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="DataNasc" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="dataNasc" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="DesCpf" min="-2" max="-2" attributes="0"/>
+                      <Component id="Cpf" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="DescRg" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="Rg" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="PiaNome" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="NomePai" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="MaeNome" min="-2" pref="103" max="-2" attributes="0"/>
+                      <Component id="NomeMae" min="-2" pref="185" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="DataNasc" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="Email" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="nomeCompleto" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="DesCpf" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="NomeCompleto" min="-2" max="-2" attributes="0"/>
-                              <Component id="email" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="dataNasc" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              <Component id="DescRg" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                              <Component id="Rg" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="33" max="32767" attributes="0"/>
+                          <Component id="voltar" min="-2" pref="73" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="Proximo" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                  <Component id="voltar" min="-2" pref="73" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="Proximo" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Cpf" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                                  <Component id="PiaNome" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <Component id="NomePai" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                                  <Component id="MaeNome" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <Component id="NomeMae" alignment="0" min="-2" pref="185" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="NomeCompleto" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="51" max="32767" attributes="0"/>
                   <Component id="NomeCompleto" min="-2" pref="18" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="nomeCompleto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="Email" min="-2" pref="18" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="email" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="DataNasc" min="-2" max="-2" attributes="0"/>
@@ -117,7 +112,7 @@
                   <Component id="dataNasc" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="DesCpf" min="-2" pref="18" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="Cpf" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="DescRg" min="-2" pref="18" max="-2" attributes="0"/>
@@ -136,7 +131,7 @@
                       <Component id="Proximo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="voltar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="29" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -261,6 +256,13 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="voltarActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/static/Len&#xe7;oD.png"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

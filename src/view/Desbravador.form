@@ -25,94 +25,119 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="deletarBtn2" alignment="1" pref="244" max="32767" attributes="0"/>
+                  <Component id="voltarBtn1" alignment="1" max="32767" attributes="0"/>
+                  <Component id="editarBtn" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="143" pref="143" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="emailLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="nomeCompletoLabel1" min="-2" max="-2" attributes="0"/>
-                          <Component id="dataNascimentoLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="rgLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="cpfLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="nomePaiLabel" min="-2" max="-2" attributes="0"/>
-                          <Component id="nomeMaeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="nomeMae" min="-2" pref="65" max="-2" attributes="0"/>
-                          <Component id="nomeCompleto" min="-2" pref="119" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="email" alignment="0" max="32767" attributes="0"/>
-                              <Component id="nomePai" alignment="0" max="32767" attributes="0"/>
-                              <Component id="rg" alignment="0" max="32767" attributes="0"/>
-                              <Component id="cpf" alignment="0" max="32767" attributes="0"/>
-                              <Component id="dataNascimento" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="nomeCompleto" min="-2" pref="119" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="cpf" min="-2" pref="102" max="-2" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                  <Component id="nomeCompletoLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="nomePaiLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                              <Component id="dataNascimentoLabel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="emailLabel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rgLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cpfLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="nomeMaeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                                              <Component id="dataNascimento" min="-2" pref="102" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="nomeMae" min="-2" pref="65" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="rg" alignment="1" min="-2" pref="102" max="-2" attributes="0"/>
+                                                      <Component id="nomePai" alignment="1" min="-2" pref="102" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="email" alignment="0" min="-2" pref="102" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="voltarBtn1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="editarBtn" max="32767" attributes="0"/>
-                          <Component id="deletarBtn2" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="213" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace pref="112" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="nomeCompleto" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Component id="nomeCompletoLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="dataNascimento" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="cpf" min="-2" pref="27" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="dataNascimentoLabel" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="rg" min="-2" pref="27" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="rgLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nomeCompletoLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nomeCompleto" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="dataNascimento" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nomePai" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="cpf" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  <Component id="dataNascimentoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="rgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rg" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="cpfLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nomePai" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nomeMae" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="nomeMaeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nomeMae" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="email" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="nomePaiLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="email" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="160" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
               <Component id="deletarBtn2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="editarBtn" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="voltarBtn1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -232,6 +257,13 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deletarBtn2ActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/static/Len&#xe7;oD.png"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

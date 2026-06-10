@@ -31,7 +31,9 @@ public class BuscarDesbravador extends javax.swing.JPanel {
 
         jButton1 = new javax.swing.JButton();
         pesquisaInput = new java.awt.TextField();
+        jLabel1 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 102, 0));
         setMinimumSize(new java.awt.Dimension(500, 600));
 
         jButton1.setText("Pesquisar");
@@ -48,6 +50,8 @@ public class BuscarDesbravador extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img soldados  (.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -55,21 +59,26 @@ public class BuscarDesbravador extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(pesquisaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(196, 196, 196)
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(111, 111, 111)
+                        .addGap(204, 204, 204)
+                        .addComponent(pesquisaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(246, 246, 246)
                         .addComponent(jButton1)))
-                .addContainerGap(235, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(396, Short.MAX_VALUE)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addComponent(pesquisaInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(89, 89, 89)
+                .addGap(25, 25, 25)
                 .addComponent(jButton1)
-                .addGap(72, 72, 72))
+                .addGap(235, 235, 235))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -104,6 +113,7 @@ public class BuscarDesbravador extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private java.awt.TextField pesquisaInput;
     // End of variables declaration//GEN-END:variables
 }

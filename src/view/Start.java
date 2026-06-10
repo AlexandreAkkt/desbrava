@@ -202,23 +202,23 @@ public class Start extends javax.swing.JPanel {
         entrar.setBackground(new java.awt.Color(255, 102, 0));
         entrar.setText("Entrar");
         jPanel2.add(entrar);
-        entrar.setBounds(70, 410, 92, 15);
+        entrar.setBounds(160, 480, 92, 15);
         jPanel2.add(jLabel3);
         jLabel3.setBounds(15, 6, 187, 0);
 
         criarconta.setBackground(new java.awt.Color(255, 102, 0));
         criarconta.setText("Criar conta");
         jPanel2.add(criarconta);
-        criarconta.setBounds(70, 430, 92, 17);
+        criarconta.setBounds(160, 510, 92, 17);
 
         desbrava.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
         desbrava.setText("Desbrava ");
         jPanel2.add(desbrava);
-        desbrava.setBounds(23, 212, 187, 73);
+        desbrava.setBounds(110, 330, 187, 73);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/static/img soldados  (.png"))); // NOI18N
         jPanel2.add(jLabel4);
-        jLabel4.setBounds(21, 18, 191, 184);
+        jLabel4.setBounds(120, 40, 191, 184);
 
         senha.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -231,7 +231,7 @@ public class Start extends javax.swing.JPanel {
             }
         });
         jPanel2.add(senha);
-        senha.setBounds(20, 370, 190, 20);
+        senha.setBounds(110, 440, 190, 20);
 
         digiteSeuEmail.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -244,10 +244,10 @@ public class Start extends javax.swing.JPanel {
             }
         });
         jPanel2.add(digiteSeuEmail);
-        digiteSeuEmail.setBounds(20, 340, 190, 20);
+        digiteSeuEmail.setBounds(110, 410, 190, 20);
 
         add(jPanel2);
-        jPanel2.setBounds(20, 20, 230, 460);
+        jPanel2.setBounds(20, 20, 410, 550);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
